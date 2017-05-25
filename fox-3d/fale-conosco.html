@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fox3D - A Melhor Impressora 3D do Brasil</title>
+        <link rel="stylesheet" href="_css/estilo.css" />
+        <link rel="stylesheet" href="_css/form.css">
+    </head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Fox3D</h1>
+                <h2>Imprimindo Sonhos</h2>
+            </hgroup>
+            <img id="icone" src="_imagens/contato.png">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="square">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="specs.html"><li>Especificações</li></a>
+                    <a href="fotos.html"><li>Fotos</li></a>
+                    <a href="multimidia.html"><li>Multimídia</li></a>
+                    <a href="fale-conosco.html"><li>Fale conosco</li></a>
+                </ul>   
+            </nav>
+        </header>
+        <form method="post" id="fcontato" action="mailto:profalexandrevieira@gmail.com">
+            <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+                <p>
+                    <label for="cnome">Nome:</label> 
+                    <input type="text" name="tnome" id="cnome" size="30" maxlength="70" placeholder="Nome completo"/>
+                </p>
+                <p>
+                    <label for="csenha">Senha:</label> 
+                    <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 dígitos" />
+                </p>
+                <p>
+                    <label for="cmail">E-mail: </label>
+                    <input type="email" name="tmail" id="cmail" size="30" maxlength="60" />
+                </p>
+                <fieldset id="sexo"><legend>Sexo</legend>
+                    <input type="radio" name="tsexo" id="cmasc" checked />
+                    <label for="cmasc">Masculino</label><br/>
+                    <input type="radio" name="tsexo" id="cfem" />
+                    <label for="cfem">Feminino</label>
+                </fieldset>
+                <p>
+                    <label for="cnasc">Data de Nascimento: </label>
+                    <input type="date" name="tnasc" id="cnasc">
+                </p>
+            </fieldset>  
+            <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+                <p>
+                    <label for="crua">Logradouro: </label>
+                    <input type="text" name="trua" id="crua" size="30" placeholder="Rua, Avenida, travessa..."/>
+                </p>
+                <p>
+                    <label for="cnum">Número: </label>
+                    <input type="number" name="tnum" id="cnum" min="1" max="99999"/>
+                </p>
+                <p>
+                    <label for="cest">Estado: </label>
+                    <input type="text" list="estados" name="test" id="cest" size="2">
+                    <datalist id="estados">
+                        <option value="AC">
+                        <option value="AL">
+                        <option value="AP">
+                        <option value="AM">
+                        <option value="BA">
+                        <option value="CE">
+                        <option value="DF">
+                        <option value="ES">
+                        <option value="GO">
+                        <option value="MA">
+                        <option value="MT">
+                        <option value="MS">
+                        <option value="MG">
+                        <option value="PA">
+                        <option value="PB">
+                        <option value="PR">
+                        <option value="PE">
+                        <option value="PI">
+                        <option value="RJ">
+                        <option value="RN">
+                        <option value="RS">
+                        <option value="RO">
+                        <option value="RR">
+                        <option value="SC">
+                        <option value="SP">
+                        <option value="SE">
+                        <option value="TO">
+                    </datalist>
+                </p>
+                <p>
+                    <label for="ccid">Cidade: </label>
+                    <input type="text" name="tcid" id="ccid" size="30" placeholder="Cidade"/>
+                </p>
+            </fieldset>
+            <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+                <p>
+                    <label for="curg">Grau de Urgência: </label>
+                    Min.<input type="range" name="turg" id="curg" min="0" max="10" step="1"/>Máx.
+                </p>
+                <p><label for="cmsg">Mensagem: </label><br/><textarea name="tmsg" id="cmsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+                </fieldset>
+                <fieldset id="pedido"><legend>Quero uma Fox3D</legend>
+                <p>
+                    <input type="checkbox" name="tped" id="cped" checked/>
+                    <label for="cped"> Gostaria de adquirir uma Fox3D</label>
+                </p>
+                <p>
+                    <label for="ccor">Cor: </label>
+                    <input type="color" name="tcor" id="ccor" value="#0000FF"/>
+                </p>
+                <p>
+                    <label for="cqtd">Quantidade: </label> 
+                    <input type="number" name="tqtd" id="cqtd" min="0" max="5" value="0"/>
+                </p>
+                <p>
+                    <label for="ctot">Preço Total: R$ </label>
+                    <input type="text" name="ttot" id="ctot" placeholder="Total a pagar" readonly/>
+                </p>
+            </fieldset>
+            <input type="image" name="tenviar" id="cenviar" src="_imagens/botao-enviar.png"/>
+        </form>
+        <footer id="rodape">
+            <p>
+                Copyright &copy; 2016 - by Alexandre Vieira <br>
+                <a href="http://pt-br.facebook.com/Faculdadeevolucao">Facebook</a> | <a href="http://twitter.com/facevolucao">Twitter</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
